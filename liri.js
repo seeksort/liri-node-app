@@ -4,6 +4,7 @@ var
     ;
 
 var 
+    fs = require('fs')
     request = require('request')
     spotify = require('spotify')
     Twitter = require('twitter')
@@ -55,7 +56,7 @@ function grabSpotify(trackSearch) {
 
 // OMDB (two args)
 function grabMovie(movieSearch){
-    var movieParam = 'http://www.omdbapi.com/?t=' + movieSearch + '&y=&plot=short&tomatoes=true&r=json';
+    var movieParam = 'https://www.omdbapi.com/?t=' + movieSearch + '&y=&plot=short&tomatoes=true&r=json';
     request(movieParam, function(error, response, body) {
         if (error) {
             console.log(body);
@@ -77,42 +78,58 @@ function grabMovie(movieSearch){
 
 // random.txt (one arg)
 function grabRandom() {
-
+    fs.readFile('random.txt', 'utf8', function(error, data) {
+        if (error) {
+            console.log(error);
+        }
+        else {
+            if (data.includes(',')) {
+                var argsArr = data.split(',');
+                argsArr[1] = argsArr[1].slice(1,-1).replace(/’/g, '\'');
+                evalArgs(argsArr[0], argsArr[1]);
+            }
+            else {
+                evalArgs(data);
+            }
+        }
+    })
 }
 
 // Append to log.txt
 
 // Grab args
-if (!command) {
-    console.log('Liri requests a command.');
+function evalArgs(command, searchStr) {
+    if (!command) {
+            console.log('Liri requests a command.');
+    }
+    else if (!searchStr) {
+        if (command === 'my-tweets'){
+            grabTweets();
+        }
+        else if (command === 'spotify-this-song') {
+            grabSpotify('The Sign artist:Ace of Base');
+        }
+        else if (command === 'movie-this') {
+            grabMovie('Mr. Nobody');
+        }
+        else if (command === 'do-what-it-says') {
+            grabRandom();
+        }
+        else {
+            console.log('Liri requests a valid command.');
+        }
+    } 
+    else if (searchStr) {
+        if (command === 'spotify-this-song') {
+            grabSpotify(searchStr);
+        }
+        else if (command === 'movie-this') {
+            grabMovie(searchStr);
+        }
+    }
 }
-else if (!searchStr) {
-    if (command === 'my-tweets'){
-        grabTweets();
-    }
-    else if (command === 'do-what-it-says') {
 
-    }
-    else if (command === 'spotify-this-song') {
-        grabSpotify('The Sign artist:Ace of Base');
-    }
-    else if (command === 'movie-this') {
-        grabMovie('Mr. Nobody');
-    }
-    else {
-        console.log('Liri requests a valid command.');
-    }
-} 
-else if (searchStr) {
-    if (command === 'spotify-this-song') {
-        grabSpotify(searchStr);
-    }
-    else if (command === 'movie-this') {
-        grabMovie(searchStr);
-    }
-}
-
-
+evalArgs(command, searchStr);
 
 
 
