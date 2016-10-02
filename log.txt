@@ -1,112 +1,89 @@
-2016-10-02 3:04:48 PM CDT - 
+2016-10-02 4:20:32 PM CDT: 
 USER >> my-tweets
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Sun Oct 02 19:56:59 +0000 2016: 
 Working on bootcamp homework today. Part of it involves grabbing my tweets from Twitter ;) #twitterapi #nodejs
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Fri Sep 30 02:24:59 +0000 2016: 
 I've been using the readmes in my github *points left* as a sort of narrative of learning for each project. Hopefully that's kosher?
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Fri Sep 30 02:24:41 +0000 2016: 
 I started the UT Austin Coding Bootcamp in July! I've learned a ton in 10 wks, Bootstrap, vanilla JS, jQuery, Firebase &amp; this week Node.js
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Fri Sep 30 02:17:08 +0000 2016: 
 Twitter does not mess around, they suspend if you go inactive -_-  Anyway! Hello again! Follow for tweets about boot camp lessons &amp; hijinks!
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 02:07:56 +0000 2016: 
 Great idea, and nice to see companies adopting this. https://t.co/rOoVNf2P38
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 02:05:26 +0000 2016: 
 @CodeNewbies Thanks for a great chat all! #CodeNewbie
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 01:59:21 +0000 2016: 
 A4 I liked the idea of experiments in this recent Medium article. #CodeNewbie https://t.co/AwJK0aPcsT
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 01:30:03 +0000 2016: 
 A2 Former interns at my work sometimes come back, often w/ addnl exp from elsewhere. So, potential loyalty plus outside exp #CodeNewbie
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 01:21:47 +0000 2016: 
 @cliftonC76 With browser cookies? Hahah.
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 01:15:34 +0000 2016: 
 A1:Would be very interested, especially if it felt like the company would be providing both interesting projects and supportive mentoring.
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 01:13:22 +0000 2016: 
 @CodeNewbies It was the local Code Newbie meetup, we had a developer Q&amp;A. Very informative, and everyone was welcoming :)
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 01:11:31 +0000 2016: 
 @RobFrelow @CodeNewbies Hi Rob! It was the CodeNewbie meetup here in Austin, we had a developer Q&amp;A and got to ask him lots of questions.
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Thu May 19 01:07:24 +0000 2016: 
 Hi @CodeNewbies! *waves* First time here in the Twitter Chat, but attended a local #CodeNewbie meetup on Friday and it was great :)
 
 
-2016-10-02 3:04:49 PM CDT - 
+2016-10-02 4:20:33 PM CDT: 
 TWEET TIME: Mon Apr 04 22:32:39 +0000 2016: 
 What's up Twitter? Not sure what to do for the first tweet. ...Maybe I'll direct you to my similarly new tumblr? :P https://t.co/54tafVm4ER
 
 
-2016-10-02 3:04:58 PM CDT - 
+2016-10-02 4:21:02 PM CDT: 
 USER >> spotify-this-song pen pineapple apple pen
 
-2016-10-02 3:04:58 PM CDT - 
+2016-10-02 4:21:03 PM CDT: 
 Artist: DJ Rikituki
 Track: Pen Pineapple Apple Pen
 Preview URL: https://p.scdn.co/mp3-preview/fdba63926b7ba0f9a49bb6c0a6ee0f1db9b65afd
 Album: Pen Pineapple Apple Pen
 
-2016-10-02 3:06:21 PM CDT - 
-USER >> spotify-this-song
-
-2016-10-02 3:06:22 PM CDT - 
-Artist: Ace of Base
-Track: The Sign
-Preview URL: https://p.scdn.co/mp3-preview/177e65fc2b8babeaf9266c0ad2a1cb1e18730ae4
-Album: The Sign (US Album) [Remastered]
-
-2016-10-02 3:06:32 PM CDT - 
-USER >> movie-this
-
-2016-10-02 3:06:32 PM CDT - 
-Title: Mr. Nobody
-Year: 2009
-IMDB Rating: 7.9
-Country: Belgium, Germany, Canada, France
-Language: English, Mohawk
-Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
-Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
-Rotten Tomatoes Rating: 6.6
-Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mr-nobody/
-
-2016-10-02 3:06:36 PM CDT - 
+2016-10-02 4:21:44 PM CDT: 
 USER >> movie-this Clue
 
-2016-10-02 3:06:36 PM CDT - 
+2016-10-02 4:21:45 PM CDT: 
 Title: Clue
 Year: 1985
 IMDB Rating: 7.3
@@ -117,30 +94,13 @@ Actors: Eileen Brennan, Tim Curry, Madeline Kahn, Christopher Lloyd
 Rotten Tomatoes Rating: 5.8
 Rotten Tomatoes URL: http://www.rottentomatoes.com/m/clue/
 
-2016-10-02 3:06:43 PM CDT - 
+2016-10-02 4:21:54 PM CDT: 
 USER >> do-what-it-says
 
-2016-10-02 3:06:43 PM CDT - 
-USER >> movie-this kiki's delivery service
-
-2016-10-02 3:06:43 PM CDT - 
-Title: Kiki's Delivery Service
-Year: 1989
-IMDB Rating: 7.9
-Country: Japan
-Language: Japanese, English
-Plot: A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.
-Actors: Minami Takayama, Rei Sakuma, Kappei Yamaguchi, Keiko Toda
-Rotten Tomatoes Rating: N/A
-Rotten Tomatoes URL: http://www.rottentomatoes.com/m/cat-girl-kiki/
-
-2016-10-02 3:44:09 PM CDT - 
-USER >> do-what-it-says
-
-2016-10-02 3:44:09 PM CDT - 
+2016-10-02 4:21:54 PM CDT: 
 USER >> spotify-this-song I Want it That Way
 
-2016-10-02 3:44:10 PM CDT - 
+2016-10-02 4:21:55 PM CDT: 
 Artist: Backstreet Boys
 Track: I Want It That Way
 Preview URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6

@@ -104,7 +104,7 @@ function grabRandom() {
 
 // Append to log.txt
 function writeLog(text) {
-    var now = moment().tz('America/Chicago').format("YYYY-MM-DD h:mm:ss A z -");
+    var now = moment().tz('America/Chicago').format("YYYY-MM-DD h:mm:ss A z:");
     fs.appendFile('log.txt', now + ' \n' + text + '\n\n', function(error) {
         if (error) {
             console.log('Append to log error: ' + error);
@@ -127,10 +127,10 @@ function evalArgs(command, searchStr) {
             case 'spotify-this-song':
                 grabSpotify('The Sign artist:Ace of Base');
                 break;
-            case command === 'movie-this':
+            case 'movie-this':
                 grabMovie('Mr. Nobody');
                 break;
-            case command === 'do-what-it-says':
+            case 'do-what-it-says':
                 grabRandom();
                 break;
             default:
