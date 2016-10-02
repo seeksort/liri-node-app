@@ -120,20 +120,22 @@ function evalArgs(command, searchStr) {
     }
     else if (!searchStr) {
         writeLog('USER >> ' + command);
-        if (command === 'my-tweets'){
-            grabTweets();
-        }
-        else if (command === 'spotify-this-song') {
-            grabSpotify('The Sign artist:Ace of Base');
-        }
-        else if (command === 'movie-this') {
-            grabMovie('Mr. Nobody');
-        }
-        else if (command === 'do-what-it-says') {
-            grabRandom();
-        }
-        else {
-            console.log('Liri requests a valid command.');
+        switch (command) {
+            case 'my-tweets':
+                grabTweets();
+                break;
+            case 'spotify-this-song':
+                grabSpotify('The Sign artist:Ace of Base');
+                break;
+            case command === 'movie-this':
+                grabMovie('Mr. Nobody');
+                break;
+            case command === 'do-what-it-says':
+                grabRandom();
+                break;
+            default:
+                console.log('Liri requests a valid command.');
+                break;
         }
     } 
     else if (searchStr) {
@@ -147,8 +149,5 @@ function evalArgs(command, searchStr) {
     }
 }
 
-
+// Start program
 evalArgs(command, searchStr);
-
-
-

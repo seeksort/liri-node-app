@@ -1,0 +1,26 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "A command line app that will output Tweets, Spotify song info, and movie info, based on user commands.",
+  "main": "index.js",
+  "dependencies": {
+    "moment-timezone": "^0.5.5",
+    "request": "^2.75.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seeksort/liri-node-app.git"
+  },
+  "author": "seeksort",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seeksort/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/seeksort/liri-node-app#readme"
+}

@@ -23,6 +23,6 @@ Followed by:
 
     do-what-it-says
 
-This was quite fun. The docs for all of the APIs are fairly well-written. Like a lot of code, I feel like working with APIs feels similar to assembling something, like Legos. The hardest part was pulling the arguments from the text file, because apparently TextEdit in OS X likes using right quotation marks (’) instead of straight apostrophes ('), and [the difference](http://stackoverflow.com/questions/6711892/right-single-apostrophe-vs-apostrophe) is enough to confuse the OMDB API. Learn your API quirks!
+The commands and output will also append to a logfile with a Moment-timezone.js formatted timestamp.
 
-[Heroku](#)
+This was quite fun. The docs for all of the APIs are fairly well-written. Like a lot of code, I feel like working with APIs feels similar to assembling something, like Legos. The hardest part was pulling the arguments from the text file, because apparently TextEdit in OS X likes using right quotation marks (’) instead of straight apostrophes ('), and [the difference](http://stackoverflow.com/questions/6711892/right-single-apostrophe-vs-apostrophe) is enough to confuse the OMDB API. Learn your API quirks!
