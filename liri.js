@@ -5,6 +5,7 @@ var
 
 var 
     fs = require('fs')
+    moment = require('moment-timezone')
     request = require('request')
     spotify = require('spotify')
     Twitter = require('twitter')
@@ -21,15 +22,16 @@ var client = new Twitter({
 // Twitter (one arg)
 function grabTweets() {
     client.get('statuses/user_timeline', {
-        screen_name: 'seeksort',
-        count: 5
+        count: 20
     }, function(error, tweets, response) {
         if (error) {
             console.log(error);
         }
         else {
             tweets.forEach(function(tweet) {
-                console.log('TWEET: ' + tweet.created_at + ': \n' + tweet.text + '\n');
+                var logTweet = 'TWEET TIME: ' + tweet.created_at + ': \n' + tweet.text + '\n';
+                console.log(logTweet);
+                writeLog(logTweet);
             });
         }
     });
@@ -44,12 +46,14 @@ function grabSpotify(trackSearch) {
         if (error) {
             console.log(error);
         }
-        else { // artist, song title, preview url, album name
-            console.log('Artist: ' + data.tracks.items[0].artists[0].name);
-            console.log('Track: ' + data.tracks.items[0].name);
-            console.log('Preview URL: ' + data.tracks.items[0].preview_url);
-            console.log('Album: ' + data.tracks.items[0].album.name);
-            // console.log(data); Debug
+        else {
+            var logTrack = 
+            'Artist: ' + data.tracks.items[0].artists[0].name + '\n' +
+            'Track: ' + data.tracks.items[0].name + '\n' +
+            'Preview URL: ' + data.tracks.items[0].preview_url + '\n' +
+            'Album: ' + data.tracks.items[0].album.name;
+            console.log(logTrack);
+            writeLog(logTrack);
         }
     });
 }
@@ -63,15 +67,18 @@ function grabMovie(movieSearch){
         }
         else {
             var result = JSON.parse(body);
-            console.log('Title: ' + result.Title);
-            console.log('Year: ' + result.Year);
-            console.log('IMDB Rating: ' + result.imdbRating);
-            console.log('Country: ' + result.Country);
-            console.log('Language: ' + result.Language);
-            console.log('Plot: ' + result.Plot);
-            console.log('Actors: ' + result.Actors);
-            console.log('Rotten Tomatoes Rating: ' + result.tomatoRating);
-            console.log('Rotten Tomatoes URL: ' + result.tomatoURL);
+            var logMovie = 
+            'Title: ' + result.Title + '\n' +
+            'Year: ' + result.Year + '\n' +
+            'IMDB Rating: ' + result.imdbRating + '\n' +
+            'Country: ' + result.Country + '\n' +
+            'Language: ' + result.Language + '\n' +
+            'Plot: ' + result.Plot + '\n' +
+            'Actors: ' + result.Actors + '\n' +
+            'Rotten Tomatoes Rating: ' + result.tomatoRating + '\n' +
+            'Rotten Tomatoes URL: ' + result.tomatoURL
+            console.log(logMovie);
+            writeLog(logMovie);
         }
     });
 }
@@ -96,13 +103,23 @@ function grabRandom() {
 }
 
 // Append to log.txt
+function writeLog(text) {
+    var now = moment().tz('America/Chicago').format("YYYY-MM-DD h:mm:ss A z -");
+    fs.appendFile('log.txt', now + ' \n' + text + '\n\n', function(error) {
+        if (error) {
+            console.log('Append to log error: ' + error);
+        }
+    });
+}
 
 // Grab args
 function evalArgs(command, searchStr) {
     if (!command) {
-            console.log('Liri requests a command.');
+        writeLog('no command entered');
+        console.log('Liri requests a command.');
     }
     else if (!searchStr) {
+        writeLog('USER >> ' + command);
         if (command === 'my-tweets'){
             grabTweets();
         }
@@ -120,6 +137,7 @@ function evalArgs(command, searchStr) {
         }
     } 
     else if (searchStr) {
+        writeLog('USER >> ' + command + ' ' + searchStr);
         if (command === 'spotify-this-song') {
             grabSpotify(searchStr);
         }
@@ -128,6 +146,7 @@ function evalArgs(command, searchStr) {
         }
     }
 }
+
 
 evalArgs(command, searchStr);
 
